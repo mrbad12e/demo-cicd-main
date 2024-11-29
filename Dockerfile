@@ -4,12 +4,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN bun install
+RUN npm install
 
 COPY bundle.js ./
 
 EXPOSE 8000
 
-ENTRYPOINT [ "bun" ]
+ENTRYPOINT [ "npm" ]
 
 CMD [ "bundle.js" ]
