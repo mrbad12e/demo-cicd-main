@@ -30,7 +30,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: mrbad12e/ci-cd:staging2
+          tags: mrbad12e/ci-cd
 
 
   pull-and-up:
